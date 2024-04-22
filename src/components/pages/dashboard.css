@@ -1,0 +1,20 @@
+/* .artist-block-wrapper{
+    display: flex;
+    gap:20px;
+} */
+
+/* .browse-heading{
+    color: white;
+    margin-bottom: 20px;
+} */
+
+
+
+.dashboard-wrap{
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.dash-block{
+    margin-bottom: 50px;
+}

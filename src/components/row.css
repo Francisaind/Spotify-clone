@@ -1,0 +1,89 @@
+.row{
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2% 0; 
+    margin: 2%; */
+
+    cursor: pointer;
+    display: grid;
+    /* border: 1px solid #ccc; */
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: 1% 2%; */
+    margin: 1%;
+    gap: 16px;
+    grid-template-columns: [index] 16px [first] 6fr [var1] 4fr  [time] minmax(120px,1fr) [last] minmax(50px,.5fr);
+     /* 1fr .5fr .25fr .25fr; */
+     padding: 1rem;
+     position: relative;
+}
+
+.row:hover{
+    /* background-color: #333; */
+    border-radius: 5px;
+
+    background-color: hsla(0,0%,100%,.1);
+    /* opacity: .7; */
+}
+
+
+.song-main{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.song-main > img{
+    /* float: left; */
+    /* margin-right: 5%; */
+    max-width: 40px;
+    max-height: 40px;
+    border: 1px solid white;
+}
+
+/* .album, */
+.date-added,.duration,.song-options{
+    justify-self: center;
+}
+.names{
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+.names .singer{
+    font-size: small;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.song:hover,
+.names .singer:hover,
+.album:hover{
+    text-decoration: underline;
+}
+
+.option_popup{
+    background-color: black;
+    /* width: 100%; */
+    height: fit-content;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    /* display: inline-block; */
+    padding: 20px;
+
+}
+
+.popup-heading{
+
+}
+
+.popup-labels span{
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+}

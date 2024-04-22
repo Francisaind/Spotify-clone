@@ -1,0 +1,61 @@
+.artist-row {
+    padding: 20px 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 50px 100px 2fr 1fr;
+    place-items: center;
+    color: white;
+}
+
+div.artist-row:hover {
+    /* background: rgba(255,
+    255,255,.4); */
+    background-color: hsla(0,0%,100%,.1);
+}
+
+.artist-song-name{
+    justify-self: left;
+}
+
+.artist-track-img{
+    margin-right: 20px;
+}
+
+.banner-block{
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 30px;
+    padding-top: 100px;
+    /* border: 1px solid seagreen; */
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.banner-block img{
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner-name{
+    font-weight: 700;
+    font-size: 6rem;
+    color: white;
+}
+.banner-followers{
+    color: white;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/* ---------------------------- PLAYLIST ----------------------------- */
+.playlist-content{
+    padding: 0 30px ;
+}

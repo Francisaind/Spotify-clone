@@ -1,0 +1,103 @@
+.main{
+    color: white;
+}
+.top-row{
+    display: grid;
+    grid-template-columns: [index] 16px [first] 6fr [var1] 4fr [clock] minmax(120px,1fr) [last] minmax(50px,.5fr);
+    padding: 0 32px;
+    gap: 16px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #b3b3b3;
+}
+/* .top-row .album, */
+.top-row .date{
+    justify-self: center;
+}
+
+.hr-top-row{
+    border: none;
+    background: #403e3e;
+    width: 94%;
+    margin: 15px auto;
+    opacity: .4;
+    border-top: 3px solid #403e3e;
+    /* height: 10px*/
+}
+.main-icons{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+.green-icon{
+    color: green;
+    margin-right: 2%;
+}
+.green-icon:hover{
+    transform: scale(1.1);
+}
+.large{
+    font-size: 5em;
+}
+
+.more-icon{
+    opacity: 0.7;
+}
+
+.more-icon:hover{
+    opacity: 1;
+}
+
+.clock{
+    justify-self: center;
+}
+
+
+
+
+@media screen and (max-screen: 767px) {
+    .top-row:nth-child(3),.top-row span:nth-child(4){
+        display: none;
+    }
+    .main{
+        background-color: red;
+    }
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1024px){
+    span.album{
+        justify-self: left;
+    }
+}
+@media screen and (max-width: 767px) {
+    span.album,span.date-added,span.mobile-hide,.album{
+        display: none;
+    }
+
+    .main .row,.main .top-row{
+        grid-template-columns: 16px 16fr minmax(120px,1fr);
+        /* grid-template-columns: 1fr 10fr 5fr 3fr; */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .names span.song{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-size: 120%;
+    }
+    span.index,span.duration,.top-row,.main .hr-top-row{
+        display: none;
+    }
+    .main .row{
+        grid-template-columns: 1fr minmax(20px,.1fr);
+    }
+    .song-main > img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

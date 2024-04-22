@@ -1,0 +1,61 @@
+.is-sticky{
+    position: fixed;
+    top: 0;
+    background-color: #040404;
+    opacity: 1;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.is-sticky .header-profile_btn{
+    /* background-color: black; */
+    /* opacity: 1; */
+}
+
+.header-sticky-laptop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-right: 50px;
+    width: -webkit-fill-available;
+    padding: 30px;
+    position: sticky;
+    position:-webkit-sticky;
+    top:0;
+
+    justify-content: flex-end;
+}
+
+/* --------------------- SEARCH BLOCK ----------------------- */
+
+
+
+.search-block{
+    position: relative;
+}
+
+.search-btn{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-input{
+    width: 260px;
+    /* height: 60px; */
+    /* background: rgba(0,0,0,.7); */
+    border: 1px solid #222;
+    padding: 10px;
+    /* font-size: 20px; */
+    border-radius: 25px;
+    padding-left: 40px;
+}
+
+.sticky-header-user-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}

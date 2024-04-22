@@ -1,0 +1,174 @@
+.footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #282828;
+    color: white;
+    
+    height: 15vh;
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.footer .left{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    /* border: 1px solid azur; */
+    /* gap: 4%; */
+
+}
+
+.footer .left .song-pic{
+    border-radius: 5%;
+    /* padding: 4%; */
+    width: 60px;
+    height: 60px;
+    margin-right: 20px
+}
+
+.footer .left .song-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .icon-container{
+    display: flex;
+    gap:4%;
+    margin: 2%;
+    justify-content: center;
+}
+
+.footer .left .song-other-info{
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+
+.footer .center{
+    width: 45%;
+    /* border: 1px solid indianred; */
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+}
+
+.footer .center .audio-player{
+    /* position: absolute;
+    top: 20px;
+    left: 0px; */
+    /* width: 100%; */
+}
+
+audio{
+    width: 100%;
+}
+
+/* hides volume button   */
+audio::-webkit-media-controls-mute-button {
+    /* display: none; */
+}
+
+/* changes color of audio player  */
+audio::-webkit-media-controls-panel {
+    width: 100% ;
+    /* background: black; */
+    /* color: white; */
+}
+
+/* not working yet */
+audio::-webkit-media-controls-timeline {
+    display: block;
+    width: 100%;
+}
+
+/* hides volume slider  */
+audio::-webkit-media-controls-volume-slider {
+    /* display: none; */
+}
+
+/* changes color of time  */
+/* audio::-webkit-media-controls-current-time-display */
+audio::-webkit-media-controls-current-time-display, 
+audio::-webkit-media-controls-time-remaining-display {
+    color: black;
+    /* fill: white; */
+    /* background: white; */
+    /* opacity: 1; */
+    /* font-size: 20px; */
+}
+
+
+
+audio::-webkit-media-controls-overlay-play-button {
+    background: white ; 
+    color: white;
+}
+
+audio::-webkit-media-controls-fullscreen-volume-slide, audio::-webkit-media-controls-fullscreen-volume-min-button, audio::-webkit-media-controls-fullscreen-volume-max-button {
+    display: none;
+}
+input[type="range" i]::-webkit-media-slider-container {
+    /* background: white;
+    display: none; */
+}
+audio::-webkit-media-controls-timeline {
+   
+}
+audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-overlay-play-button111 {
+    -webkit-appearance: media-play-button;
+    
+}
+audio::-webkit-media-controls-mute-button {
+    /* color: white;
+    background: blue; */
+}
+
+/* audio::-webkit-media-controls-mute-button {
+    display: none;
+} */
+/* audio::-webkit-media-controls-panel {
+    width: 200px !important;
+    background: pink;
+    color: white;
+} */
+/* audio::-webkit-media-controls {
+    width: 1490px;
+    height: 1200px;
+} */
+
+
+.footer .right{
+    width: 25%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .right .volume-slider-container{
+    width: 40%;
+    height: fit-content;
+    margin-bottom: 1%;
+}
+
+.footer .right .volume-slider{
+    margin-left: 5px;
+}
+
+
+
+
+/******************* Mobile *************************/
+
+@media screen and (max-width: 450px) {
+    .footer{
+        display: none;
+    }
+}
